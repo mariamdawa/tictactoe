@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tictac.controller.LoginController">
+<stylesheets>
+    <URL value="@../styles.css" />
+</stylesheets>      
+    <children>
+      <ImageView fitHeight="400.0" fitWidth="565.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/gamebckground.PNG" />
+         </image>
+      </ImageView>
+     <Rectangle arcHeight="5.0" arcWidth="5.0" height="278.0" layoutX="130.0" layoutY="63.0" stroke="BLACK" strokeType="INSIDE" width="273.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.8095238095238095" startX="0.5333333333333334">
+               <stops>
+                  <Stop color="#9d75ae" />
+                  <Stop color="#1b3a6f" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill></Rectangle>
+      <TextField fx:id="userName" layoutX="182.0" layoutY="177.0" opacity="0.71" prefHeight="46.0" prefWidth="169.0" promptText="Enter your name">
+         <font>
+            <Font name="Bernard MT Condensed" size="18.0" />
+         </font>
+      </TextField>
+           <Button fx:id="login" layoutX="197.0" layoutY="257.0" mnemonicParsing="false" onAction="#login" prefHeight="37.0" prefWidth="138.0" text="Sign in" textFill="#780c90">
+         <font>
+            <Font name="Bernard MT Condensed" size="18.0" />
+         </font>
+         <effect>
+            
+         </effect>
+      </Button>
+      <Text fill="#640f83" fontSmoothingType="LCD" layoutX="130.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="game-header" text="O-X Game" textAlignment="CENTER" wrappingWidth="272.9999989271164">
+         <font>
+            <Font name="Bernard MT Condensed" size="36.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#7794e4" height="25.44" radius="8.145" spread="0.3" width="9.14" />
+         </effect>
+      </Text>
+      <Label fx:id="label" layoutX="163.0" layoutY="225.0" prefHeight="17.0" prefWidth="207.0" />
+         </children>
+</AnchorPane>
